@@ -1,3 +1,8 @@
+function sortTable() {
+    alert("Still working on sorting the years!");
+}
+
+
 // let movieData = {
 //     "The Darjeeling Limited": {
 //         plot: "A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.",
@@ -33,7 +38,3 @@
 //         cast: ["Ralph Fiennes", "F. Murray Abraham", "Mathieu Amalric"],
 //     },
 // };
-
-function submit() {
-    alert("Thanks for submitting!");
-}

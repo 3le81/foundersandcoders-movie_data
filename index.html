@@ -12,56 +12,80 @@
 
 <body>
     <header>
-        <div>
+        <div class="title">
             <h1>movie data collection</h1>
             <h3>- helpful guide for movie lovers! -</h3>
         </div>
         <div class="navbar">
             <div class="nav">
                 <a href="./index.html">home</a>
-                <a href="#new_movies" target="_blank">new movies</a>
-                <a href="#old_movies" target="_blank">old movies</a>
-                <a href="#about" target="_blank">about</a>
-                <a href="#contact_us" target="_blank">contact us</a>
+                <a href="#top_movies" target="_blank">top 10</a>
+                <!-- <a href="#popular" target="_blank">most popular</a> -->
+                <a href="#news" target="_blank">movie news</a>
+                <a href="#contact_us" target="_blank">contact</a>
             </div>
         </div>
     </header>
 
     <main>
         <br>
-        <table>
+        <table id="myTable">
             <caption>TOP FIVE MOVIES</caption>
 
             <tr>
-                <th>Movie</th>
-                <th>Genre</th>
-                <th>Year</th>
+                <th>movie</th>
+                <th>genre</th>
+                <th>year<button id="year_btn" onclick="sortTable()">sort</button></th>
+                <th>rating</th>
+                <th>runtime</th>
+                <th>cast</th>
+                <th>plot</th>
             </tr>
             <tr>
                 <td>The Darjeeling Limited</td>
                 <td>bla bla bla</td>
-                <td>2229</td>
+                <td>2007</td>
+                <td>7.2</td>
+                <td>151'</td>
+                <td>Mr bla bla bla</td>
+                <td>once upon a time...</td>
 
             </tr>
             <tr>
                 <td>The Royal Tenenbaums</td>
                 <td>bla blabla </td>
-                <td>2022</td>
+                <td>2001</td>
+                <td>bla bla</td>
+                <td>bla bla</td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>Fantastic Mr. Fox</td>
                 <td>bla bla bla</td>
-                <td>2202</td>
+                <td>2009</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>The Grand Budapest Hotel</td>
                 <td>bla bla bla</td>
-                <td>2020</td>
+                <td>2014</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>The Whale</td>
                 <td>bla bla bla</td>
                 <td>2022</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
         <br>
@@ -70,19 +94,19 @@
     <br>
     <form id="survey-form">
         <div class="form-group">
-            <label id="name-label" for="name">Name</label>
+            <label id="name-label" for="name">- Name</label>
             <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
         </div>
         <div class="form-group">
-            <label id="email-label" for="email">Email</label>
+            <label id="email-label" for="email">- Email</label>
             <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
         </div>
         <div class="form-group">
-            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <label id="number-label" for="number">- Age<span class="clue">(optional)</span></label>
             <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
         </div>
         <div class="form-group">
-            <p>Select your favourite Movie genres<span class="clue">(Check all that apply)</span></p>
+            <p>- Select your favourite movie genre<span class="clue"> (Check all that apply)</span></p>
             <label><input name="prefer" value="thriller" type="checkbox" class="input-checkbox">Thriller</label>
             <label><input name="prefer" value="horror" type="checkbox" class="input-checkbox">Horror</label>
             <label><input name="prefer" value="comedy" type="checkbox" class="input-checkbox">Comedy</label>
@@ -94,7 +118,7 @@
             <label><input name="prefer" value="sci-fi" type="checkbox" class="input-checkbox">Sci-Fi</label>
             <label><input name="prefer" value="drama" type="checkbox" class="input-checkbox">Drama</label>
             <label><input name="prefer" value="other" type="checkbox" class="input-checkbox">Other</label>
-            <p>Comments:</p>
+            <p> Comments:</p>
             <textarea id="comments" class="input-textarea" name="comment"
                 placeholder="Leave your comments here..."></textarea>
         </div>

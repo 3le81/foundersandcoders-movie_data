@@ -1,6 +1,17 @@
-body {
-    background-color: rgb(255, 165, 165);
+* {
+    box-sizing: border-box;
 }
+
+body {
+    /* display: flexbox; */
+    background-color: rgb(255, 165, 165);
+
+}
+
+.title {
+    text-align: center;
+}
+
 
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -17,10 +28,17 @@ h3 {
 }
 
 .navbar {
-    background-color: rgb(232, 186, 186);
-    width: 24rem;
-    padding: 3px;
-    letter-spacing: 0.1px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 0.2rem;
+    /* background-color: rgb(232, 186, 186); */
+    font-size: 20px;
+    width: 30rem;
+    padding: 2px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid yellow;
 }
 
 .nav a {
@@ -28,8 +46,9 @@ h3 {
     color: black;
     text-transform: capitalize;
     display: inline;
-    justify-content: left;
+    justify-content: center;
     text-decoration: none;
+    padding: 6px;
 }
 
 .nav a:hover {
@@ -38,9 +57,62 @@ h3 {
 }
 
 
+/* main {
+    display: flexbox;
+    justify-content: center;
+    margin-left: 3rem;
+} */
+
+table {
+    margin-left: 10rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid #e7da54;
+    padding: 10px;
+    width: 60rem;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+#year_btn {
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-size: 10px;
+    float: right;
+    margin-top: -2px;
+}
+
+
+table caption {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+form {
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+}
+
+.form-group {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 6px;
+    font-size: 14px;
+}
+
+.submit-button {
+    cursor: pointer;
+}
 
 
 .footer {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px;
+    margin-left: 10px; */
+    margin: 40px auto 10px 10px;
 
 }
