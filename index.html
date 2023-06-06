@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=" stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="jscript.js"></script>
+    <title>MOVIE DATA</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>movie data collection</h1>
+            <h3>- helpful guide for movie lovers! -</h3>
+        </div>
+        <div class="navbar">
+            <div class="nav">
+                <a href="./index.html">home</a>
+                <a href="#new_movies" target="_blank">new movies</a>
+                <a href="#old_movies" target="_blank">old movies</a>
+                <a href="#about" target="_blank">about</a>
+                <a href="#contact_us" target="_blank">contact us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <br>
+        <table>
+            <caption>TOP FIVE MOVIES</caption>
+
+            <tr>
+                <th>Movie</th>
+                <th>Genre</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>The Darjeeling Limited</td>
+                <td>bla bla bla</td>
+                <td>2229</td>
+
+            </tr>
+            <tr>
+                <td>The Royal Tenenbaums</td>
+                <td>bla blabla </td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Fantastic Mr. Fox</td>
+                <td>bla bla bla</td>
+                <td>2202</td>
+            </tr>
+            <tr>
+                <td>The Grand Budapest Hotel</td>
+                <td>bla bla bla</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>The Whale</td>
+                <td>bla bla bla</td>
+                <td>2022</td>
+            </tr>
+        </table>
+        <br>
+    </main>
+
+    <br>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+            <p>Select your favourite Movie genres<span class="clue">(Check all that apply)</span></p>
+            <label><input name="prefer" value="thriller" type="checkbox" class="input-checkbox">Thriller</label>
+            <label><input name="prefer" value="horror" type="checkbox" class="input-checkbox">Horror</label>
+            <label><input name="prefer" value="comedy" type="checkbox" class="input-checkbox">Comedy</label>
+            <label><input name="prefer" value="family" type="checkbox" class="input-checkbox">Family Movie</label>
+            <br />
+            <label><input name="prefer" value="western" type="checkbox" class="input-checkbox">Western</label>
+            <label><input name="prefer" value="fantasy" type="checkbox" class="input-checkbox">Fantasy</label>
+            <label><input name="prefer" value="cartoon" type="checkbox" class="input-checkbox">Cartoon</label>
+            <label><input name="prefer" value="sci-fi" type="checkbox" class="input-checkbox">Sci-Fi</label>
+            <label><input name="prefer" value="drama" type="checkbox" class="input-checkbox">Drama</label>
+            <label><input name="prefer" value="other" type="checkbox" class="input-checkbox">Other</label>
+            <p>Comments:</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Leave your comments here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button" onclick="submit()">Submit</button>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <p>Copyright &#169; 2023 Created by <a href="https://github.com/3le81/foundersandcoders-project_gallery"
+                target="_blank" id="elena">Elena Pagano</a> for Founders and Coders.</p>
+    </footer>
+</body>
+
+</html>
