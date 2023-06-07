@@ -63,6 +63,21 @@ h3 {
     margin-left: 3rem;
 } */
 
+#myInput {
+    float: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url('./icon_search.png');
+    background-position: 8px 6px;
+    background-repeat: no-repeat;
+    width: 20rem;
+    font-size: 14px;
+    padding: 12px 10px 12px 45px;
+    border: 1px solid #e7da54;
+    /* border: 1px solid #ddd; */
+    margin-bottom: 12px;
+}
+
+
 table {
     margin-left: 10rem;
 }
@@ -79,11 +94,9 @@ th {
     text-transform: uppercase;
 }
 
-#year_btn {
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-    font-size: 10px;
-    float: right;
-    margin-top: -2px;
+.clickable:hover {
+    color: #f919ba;
+    cursor: pointer;
 }
 
 
@@ -99,7 +112,7 @@ form {
     margin-top: 0.5rem;
 }
 
-.form-group {
+.form-group label {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 6px;
     font-size: 14px;
@@ -111,8 +124,7 @@ form {
 
 
 .footer {
-    /* margin-bottom: 10px;
-    margin-left: 10px; */
+
     margin: 40px auto 10px 10px;
 
 }

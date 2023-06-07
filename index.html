@@ -29,63 +29,73 @@
 
     <main>
         <br>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for movies..">
         <table id="myTable">
             <caption>TOP FIVE MOVIES</caption>
 
             <tr>
-                <th>movie</th>
+                <th class="clickable" onclick="sortTable(0)">movie</th>
+                <th class="clickable" onclick="sortTable(1)">year</th>
                 <th>genre</th>
-                <th>year<button id="year_btn" onclick="sortTable()">sort</button></th>
                 <th>rating</th>
                 <th>runtime</th>
-                <th>cast</th>
-                <th>plot</th>
+                <th class="clickable">cast</th>
+                <th class="clickable">plot</th>
             </tr>
             <tr>
                 <td>The Darjeeling Limited</td>
-                <td>bla bla bla</td>
                 <td>2007</td>
+                <td>bla bla bla</td>
                 <td>7.2</td>
                 <td>151'</td>
-                <td>Mr bla bla bla</td>
-                <td>once upon a time...</td>
+                <td>Mr bla bla..</td>
+                <td><button id="read_plot" onclick="read_plot()"> read plot</button></td>
 
             </tr>
             <tr>
                 <td>The Royal Tenenbaums</td>
-                <td>bla blabla </td>
                 <td>2001</td>
+                <td>bla blabla </td>
                 <td>bla bla</td>
                 <td>bla bla</td>
-                <td></td>
-                <td></td>
+                <td>Mr bla bla..</td>
+                <td><button id="read_plot" onclick="read_plot()"> read plot</button></td>
             </tr>
             <tr>
                 <td>Fantastic Mr. Fox</td>
-                <td>bla bla bla</td>
                 <td>2009</td>
+                <td>bla bla bla</td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>Mr bla bla..</td>
+                <td><button id="read_plot" onclick="read_plot()"> read plot</button></td>
             </tr>
             <tr>
                 <td>The Grand Budapest Hotel</td>
-                <td>bla bla bla</td>
                 <td>2014</td>
+                <td>bla bla bla</td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <td>Mr bla bla..</td>
+                <td><button id="read_plot" onclick="read_plot()"> read plot</button></td>
             </tr>
             <tr>
                 <td>The Whale</td>
-                <td>bla bla bla</td>
                 <td>2022</td>
+                <td>bla bla bla</td>
                 <td></td>
                 <td></td>
+                <td>Mr bla bla..</td>
+                <td><button id="read_plot" onclick="read_plot()"> read plot</button></td>
+            </tr>
+            <tr>
+                <td>Dirty Dancing</td>
+                <td>1987</td>
+                <td>love love love</td>
+                <td>10</td>
                 <td></td>
-                <td></td>
+                <td>Mr bla bla..</td>
+                <td><button id="read_plot" onclick="read_plot()"> read plot</button></td>
             </tr>
         </table>
         <br>
@@ -102,7 +112,7 @@
             <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
         </div>
         <div class="form-group">
-            <label id="number-label" for="number">- Age<span class="clue">(optional)</span></label>
+            <label id="number-label" for="number">- Age<span class="clue"> (optional)</span></label>
             <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
         </div>
         <div class="form-group">
@@ -123,7 +133,7 @@
                 placeholder="Leave your comments here..."></textarea>
         </div>
         <div class="form-group">
-            <button type="submit" id="submit" class="submit-button" onclick="submit()">Submit</button>
+            <button type="submit" id="submit" class="submit-button" onclick="submit_btn()">Submit</button>
         </div>
     </form>
 
